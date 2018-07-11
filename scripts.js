@@ -52,3 +52,17 @@ $("#form").submit(function(e){
     });
 });
 
+window.onload=function(){
+    setInterval(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll == 0) {
+    $(".main").animate({backgroundColor: '#9356e0'}, 400);
+    $(".shadow-circle").animate({backgroundColor: 'rgba(164, 110, 233, 0.9)'}, 400);
+    
+    }
+    if (scroll <= 500 && scroll >= 1) {
+    $(".main").animate({backgroundColor: 'green'}, 400);
+    $(".shadow-circle").animate({backgroundColor: 'rgba(0, 140, 0, 0.9)'}, 400);
+    }
+    }, 451);
+};

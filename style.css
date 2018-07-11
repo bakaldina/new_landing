@@ -153,7 +153,7 @@ h2 {
     margin-top: 20px;
     margin-bottom: 115px;
 }
-.img-family:after {
+.img-family .shadow-circle {
     content: '';
     position: absolute;
     top: -28px;
@@ -173,7 +173,7 @@ h2 {
     margin-bottom: 40px;
     z-index: 1;
 }
-.img-man:after {
+.img-man .shadow-circle {
     content: '';
     position: absolute;
     top: 200px;
@@ -193,7 +193,7 @@ h2 {
     margin-top: 50px;
     margin-left: 90px;
 }
-.img-couple:after {
+.img-couple .shadow-circle {
     content: '';
     position: absolute;
     top: -300px;
