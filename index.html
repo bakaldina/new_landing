@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <title>Ситимобил</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header wrapper">
+            <div class="logo header__logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="Ситимобил">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/citymobiltaxi/">
+                    <img src="img/fb.svg" alt="FB">
+                </a>
+                <a href="https://vk.com/citymobiltaxi">
+                    <img src="img/vk.svg" alt="VK">
+                </a>
+                <a href="https://ok.ru/taksisitim">
+                    <img src="img/ok.svg" alt="OK">
+                </a>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__head wrapper">
+                <div class="main__head_left">
+                    <div class="main__head_block-text">
+                        <div class="text-title">Узнай, что такое</div>
+                        <h1>Такси <br> портация</h1>
+                        <h2>от 89 <span><img src="img/roubl.svg" class="rur" alt="₽"></span></h2>
+                        <div class="orange-rectangle"></div>
+                        <div class="text">Чтобы поездок было много, <br>они должны стоить мало</div>
+                    </div>
+                </div>
+                <div class="main__head_right">
+                    
+                </div>
+            </section>
+            <section class="main__content wrapper">
+                <div class="main__content_left">
+                    <div class="main__content_block-text">
+                        <div class="text-title">Парк развлечений</div>
+                        <div class="text">В Москве любят запирать двери. Тысячи парадных подъездов заколочены изнутри досками, и сотни тысяч граждан пробираются в свои квартиры</div>
+                        <button class="button">Смотреть</button>
+                    </div>
+                    <div class="main__content_block-img img-family"></div>
+                    <div class="main__content_block-text">
+                        <div class="text-title">Офис</div>
+                        <div class="text">В Москве любят запирать двери. Тысячи парадных подъездов заколочены изнутри досками, и сотни тысяч граждан пробираются в свои квартиры</div>
+                        <button class="button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="main__content_right">
+                    <div class="main__content_block-img img-man"></div>
+                    <div class="main__content_block-text">
+                        <div class="text-title">Уличное кафе</div>
+                        <div class="text">В Москве любят запирать двери. Тысячи парадных подъездов заколочены изнутри досками, и сотни тысяч граждан пробираются в свои квартиры</div>
+                        <button class="button">Смотреть</button>
+                    </div>
+                    <div class="main__content_block-img img-couple"></div>
+                </div>
+                <div class="main__content_bottom">
+                    <div class="promo-wrapper">
+                        <div class="bottom-title">Скачайте приложение из App Store и Google Play</div>
+                        <div class="bottom-subtext">Введите номер и получите ссылку на телефон</div>
+                        <form class="phone-container" id="form">
+                            <label>
+                                <input type="text" class="js-phone-up phone" name="ph" placeholder="+7 " data-rule-required="true" data-rule-minlength="10" data-msg="Неправильный формат номера." aria-required="true">
+                            </label>
+                            <input type="submit" class="phone-button" value="Получить ссылку">
+                        </form>
+                        <div class="bottom-text">Начните таксипортироваться прямо сейчас с промокодом:</div>
+                        <div class="bottom-promocode">taxiport89</div>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer wrapper">
+            <div class="logo footer__logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="Ситимобил">
+                </a>
+            </div>
+            <div class="copyright">City-mobil 2018</div>
+        </footer>
+        <div class="modals">
+            <div class="modals__overlay">
+            </div>
+            <div class="modals__content">
+                <div id="modal">
+                    <div class="block-1-left_logo"></div>
+                    <div class="modal-text">Ссылка для скачивания была отправлена на ваш номер телефона.</div>
+                    <a class="close"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
