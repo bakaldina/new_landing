@@ -1,31 +1,22 @@
 jQuery.validator.addMethod("checkMask", function(value, element) {
     return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
 });
+
 $(function(){
     $('a[href^="#"]').on('click', function(event) {
-      // отменяем стандартное действие
       event.preventDefault();
-      
       var sc = $(this).attr("href"),
-          dn = $(sc).offset().top;
-      /*
-      * sc - в переменную заносим информацию о том, к какому блоку надо перейти
-      * dn - определяем положение блока на странице
-      */
-      
+          dn = $(sc).offset().top;    
       $('html, body').animate({scrollTop: dn}, 500);
-      
-      /*
-      * 1000 скорость перехода в миллисекундах
-      */
     });
-  });
+});
+
 $('#form').validate();
   $.validator.addClassRules({
     'js-phone-up': {
       checkMask: true
     }
-  });
+});
 
 $('.js-phone-up').mask("+7(999)999-9999", {
     autoclear: false
