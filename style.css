@@ -96,8 +96,8 @@ h2 {
     position: absolute;
     height: 473px;
     width: 263px;
-    left: 200px;
-    top: 350px;
+    left: 90px;
+    top: 242px;
 }
 .right-back-man {
     position: absolute;
@@ -125,7 +125,7 @@ h2 {
     height: 660px;
     position: absolute;
     top: -520px;
-    left: 318px;
+    left: 287px;
 }
 .rim {
     position: absolute;
@@ -136,11 +136,11 @@ h2 {
     height: 95px;
 }
 .rim-1 {
-    left: 528px;
+    left: 497px;
     top: -125px;
 }
 .rim-2 {
-    right: -139px;
+    right: -108px;
     top: -125px;
 }
 .main__head {
@@ -212,6 +212,7 @@ h2 {
 .scroll-ico {
     text-align: center;
     margin-bottom: 50px;
+    padding-top: 50px;
 }
 .main-title {
     font-size: 48px;
