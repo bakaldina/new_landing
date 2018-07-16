@@ -72,31 +72,35 @@ function modalOpen(number) {
 }
 function modalClose(number) {
     $(".video-modal" + number).hide();
+    $('iframe').attr('src',''); 
 }
   
-$(window).scroll(function(){
-    if ($(window).scrollTop() == 0){
-        $('.main__back ').css({left:"0"});
-        $('.rim').css({transform:"rotate(0)"});
-    }
-    if ($(window).scrollTop() > 30){
-        $('.main__back').css({left:"-20%"});
-        $('.rim').css({transform:"rotate(-20deg)"});
-    }
-    if ($(window).scrollTop() > 50){
-        $('.main__back').css({left:"-40%"});
-        $('.rim').css({transform:"rotate(-40deg)"});
-    }
-    if ($(window).scrollTop() > 70){
-        $('.main__back').css({left:"-60%"});
-        $('.rim').css({transform:"rotate(-60deg)"});
-    }
-    if ($(window).scrollTop() > 90){
-        $('.main__back').css({left:"-80%"});
-        $('.rim').css({transform:"rotate(-80deg)"});
-    }
-    if ($(window).scrollTop() > 110){
-        $('.main__back').css({left:"-100%"});
-        $('.rim').css({transform:"rotate(-100deg)"});
+$(window).scroll(function() {
+    if (window.screen.width > 768) {
+
+        if ($(window).scrollTop() == 0){
+            $('.main__back ').css({left:"0"});
+            $('.rim').css({transform:"rotate(0)"});
+        }
+        if ($(window).scrollTop() > 30){
+            $('.main__back').css({left:"-20%"});
+            $('.rim').css({transform:"rotate(-20deg)"});
+        }
+        if ($(window).scrollTop() > 50){
+            $('.main__back').css({left:"-40%"});
+            $('.rim').css({transform:"rotate(-40deg)"});
+        }
+        if ($(window).scrollTop() > 70){
+            $('.main__back').css({left:"-60%"});
+            $('.rim').css({transform:"rotate(-60deg)"});
+        }
+        if ($(window).scrollTop() > 90){
+            $('.main__back').css({left:"-80%"});
+            $('.rim').css({transform:"rotate(-80deg)"});
+        }
+        if ($(window).scrollTop() > 110){
+            $('.main__back').css({left:"-100%"});
+            $('.rim').css({transform:"rotate(-100deg)"});
+        }
     }
 });
