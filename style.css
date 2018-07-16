@@ -226,6 +226,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 .button {
+    display: block;
     position: relative;
     padding: 0 67px 0 67px;
     height: 60px;
@@ -546,6 +547,9 @@ iframe {
     width: 1010px;
     height: 600px;
 }
+.but-mob {
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .wrapper {
         width: 100%;
@@ -730,7 +734,7 @@ iframe {
         text-align: left;
     }
     .main__content_block-text .text {
-        width: 200px;
+        width: 198px;
         text-align: left;
     }
     .img-man img {
@@ -740,14 +744,27 @@ iframe {
         height: 290px;
         width: auto;
     }
-    .button {
+    .but-mob {
+        display: block;
+        position: relative;
+        height: 60px;
+        line-height: 55px;
+        border-radius: 100px;
+        background-color: transparent;
+        font-size: 21px;
+        font-weight: bold;
+        margin-top: 40px;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
         width: 200px;
         color: #fff;
         border: 2px solid #fff;
         padding: 0;
-        margin: 70px 0 100px 0;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 70px;
     }
-    .button svg {
+    .but-mob svg {
         fill: #fff !important;
     }
     .img-family img {
@@ -786,5 +803,8 @@ iframe {
     iframe {
         width: 100%;
         height: 300px;
+    }
+    .button {
+        display: none;
     }
 }

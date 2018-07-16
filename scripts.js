@@ -68,13 +68,15 @@ $('.button').mouseenter(function() {
 });
 
 function modalOpen(number) {
-    $(".video-modal" + number).show();
+    if (window.screen.width > 768) {
+        $(".video-modal" + number).show();
+    }
 }
 function modalClose(number) {
-    $(".video-modal" + number).hide();
-    $('iframe').attr('src',''); 
+    if (window.screen.width > 768) {
+        $(".video-modal" + number).hide();
+    }
 }
-  
 $(window).scroll(function() {
     if (window.screen.width > 768) {
 
