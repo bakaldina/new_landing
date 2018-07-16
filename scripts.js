@@ -3,7 +3,7 @@ jQuery.validator.addMethod("checkMask", function(value, element) {
 });
 
 $(function(){
-    $('a[href^="#"]').on('click', function(event) {
+    $('a[href^="#"]').on('click touchstart', function(event) {
       event.preventDefault();
       var sc = $(this).attr("href"),
           dn = $(sc).offset().top;    
