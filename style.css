@@ -26,6 +26,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     line-height: 95px;
     margin: 0;
+    margin-bottom: 30px;
 }
 h2 {
     font-size: 55px;
@@ -96,8 +97,8 @@ h2 {
     position: absolute;
     height: 473px;
     width: 263px;
-    left: 90px;
-    top: 242px;
+    left: 151px;
+    top: 276px;
 }
 .right-back-man {
     position: absolute;
@@ -156,22 +157,26 @@ h2 {
 .main__head_left .text-title {
     padding-top: 48px;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .head-button {
     text-decoration: none;
-    font-size: 34px;
+    font-size: 41px;
     font-family: 'Roboto', sans-serif;
 }
 .head-button div {
-    border: 2px solid #FFC700;
-    color: #FFC700;
+    border-bottom: 8px solid #FFC700;
+    color: #fff;
     margin-top: 30px;
-    height: 85px;
+    height: 75px;
     line-height: 85px;
-    width: 265px; 
-    padding: 0 25px;
+    width: 331px;
+    font-weight: 900;
+    letter-spacing: 0.01em;
 }
-.head-button div:hover,
+.head-button div:hover {
+    border-bottom: 8px solid #fff;
+}
 .button:hover {
     border: 2px solid #fff;
     color: #fff;
@@ -212,7 +217,7 @@ h2 {
 .scroll-ico {
     text-align: center;
     margin-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 90px;
 }
 .main-title {
     font-size: 48px;
@@ -586,6 +591,8 @@ iframe {
     }
     h1 {
         font-size: 36px;
+        margin-bottom: 0;
+        line-height: 70px;
     }
     .text-head {
         font-size: 17px;
@@ -636,16 +643,13 @@ iframe {
         width: 100%;
     }
     .head-button div {
-        background: none;
-        width: 100%;
+        width: 205px;
         padding: 0;
-        height: 60px;
+        height:50px;
         line-height: 60px;
         font-size: 26px;
-        color: #fff;
-        border: none;
-        border-radius: 6px;
-        margin-top: 10px;
+        font-weight: 500;
+        margin: auto;
     }
     .promo {
         background-color: #7000FF;
@@ -677,7 +681,7 @@ iframe {
     }
     .right-back-man {
         left: 182px;
-        top: 282px;
+        top: 260px;
     }
     .right-back-man img {
         height: 304px;
@@ -685,18 +689,18 @@ iframe {
     .car img {
         width: 563px;
         height: auto;
-        top: -406px;
+        top: -380px;
         left: -40px;
     }
     .rim-1 {
-        left: 79px;
-        top: -182px;
+        left: 78px;
+        top: -159px;
         width: 55px;
         height: 55px;
     }
     .rim-2 {
-        left: 370px;
-        top: -182px;
+        left: 369px;
+        top: -159px;
         width: 55px;
         height: 55px;
     }
@@ -713,6 +717,7 @@ iframe {
         font-size: 21px;
         font-family: 'Roboto', sans-serif;
         margin-bottom: 70px;
+        margin-top: -40px;
     }
     .scroll-ico {
         display: none;
