@@ -109,6 +109,7 @@ h2 {
     left: 151px;
     top: 276px;
 }
+.right-back-man--copy,
 .right-back-man {
     position: absolute;
     height: 473px;
@@ -116,6 +117,11 @@ h2 {
     right: 80px;
     top: 204px;
     z-index: 4;
+    opacity: 0;
+}
+
+.right-back-man--copy{
+    opacity: 1;
 }
 .right-back {
     background-image: url(img/right.png);
