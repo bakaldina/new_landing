@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 5000px;
 }
 .container {
     font-family: 'Open Sans', sans-serif;
@@ -41,6 +42,8 @@ h2 {
 }
 .header {
     padding: 40px 0;
+    left: 50% !important;
+    margin-left: -500px !important;
 }
 .social,
 .copyright {
@@ -48,6 +51,12 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     line-height: 38px;
+}
+.copyright {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 19px;
 }
 .social {
     margin-top: 5px;
@@ -75,13 +84,13 @@ h2 {
     z-index: 3;
 }
 .main__back {
-    height: 4100px;
+    height: 4300px;
     /* background-image: linear-gradient(to right, #FF7223 0%, #8424FF 100%); */
     background-image: url(img/back.svg);
     background-size: contain;
     position: absolute;
     left: 0;
-    width: 200%;
+    width: 200vw;
 }
 .left-back {
     background-image: url(img/left.png);
@@ -113,9 +122,9 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    height: 994px;
-    width: 728px;
-    right: 3px;
+    height: 700px;
+    width: 1200px;
+    right: -170px;
     top: 0;
 }
 .car {
@@ -125,7 +134,7 @@ h2 {
     width: 998px;
     height: 660px;
     position: absolute;
-    top: -520px;
+    top: -280px;
     left: 287px;
 }
 .rim {
@@ -138,14 +147,18 @@ h2 {
 }
 .rim-1 {
     left: 497px;
-    top: -125px;
+    top: 113px;
 }
 .rim-2 {
     right: -108px;
-    top: -125px;
+    top: 113px;
 }
 .main__head {
     height: 635px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+
 }
 .main__head_left {
     position: relative;
@@ -190,6 +203,10 @@ h2 {
     display: inline-block;
     vertical-align: top;
     width: 380px;
+}
+.main__content {
+    left: 50% !important;
+    margin-left: -500px !important;
 }
 .main__content_left {
     display: inline-block;
@@ -555,6 +572,11 @@ iframe {
 .but-mob {
     display: none;
 }
+
+.scrollmagic-pin-spacer .main__head {
+    left: 50% !important;
+    margin-left: -500px !important;
+}
 @media screen and (max-width: 768px) {
     .wrapper {
         width: 100%;
@@ -668,7 +690,7 @@ iframe {
         display: inline-block;
         border-radius: 8px;
         border: 2px solid #fff;
-        margin-top: 0;
+        margin-top: 0;f
         margin-bottom: 80px;
     }
     .bottom_app_google {

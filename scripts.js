@@ -77,32 +77,97 @@ function modalClose(number) {
         $(".video-modal" + number).hide();
     }
 }
+// $('.main__back').bind('mousewheel DOMMouseScroll', function(e) {
+//     var scrollTo = null;
+//     if (e.type == 'mousewheel') {
+//         scrollTo = (e.originalEvent.wheelDelta * -1);
+//     }
+//     else if (e.type == 'DOMMouseScroll') {
+//         scrollTo = 40 * e.originalEvent.detail;
+//     }
+//     if (scrollTo) {
+//         e.preventDefault();
+//         $(this).scrollTop(scrollTo + $(this).scrollTop());
+//     }
+// });
 $(window).scroll(function() {
     if (window.screen.width > 768) {
-
         if ($(window).scrollTop() == 0){
-            $('.main__back ').css({left:"0"});
             $('.rim').css({transform:"rotate(0)"});
         }
-        if ($(window).scrollTop() > 30){
-            $('.main__back').css({left:"-20%"});
+        if ($(window).scrollTop() > 120){
             $('.rim').css({transform:"rotate(-20deg)"});
         }
-        if ($(window).scrollTop() > 50){
-            $('.main__back').css({left:"-40%"});
+        if ($(window).scrollTop() > 150){
             $('.rim').css({transform:"rotate(-40deg)"});
         }
-        if ($(window).scrollTop() > 70){
-            $('.main__back').css({left:"-60%"});
+        if ($(window).scrollTop() > 180){
             $('.rim').css({transform:"rotate(-60deg)"});
         }
-        if ($(window).scrollTop() > 90){
-            $('.main__back').css({left:"-80%"});
+        if ($(window).scrollTop() > 210){
             $('.rim').css({transform:"rotate(-80deg)"});
         }
-        if ($(window).scrollTop() > 110){
-            $('.main__back').css({left:"-100%"});
+        if ($(window).scrollTop() > 240){
             $('.rim').css({transform:"rotate(-100deg)"});
+        }
+        if ($(window).scrollTop() > 270){
+            $('.rim').css({transform:"rotate(-120deg)"});
+        }
+        if ($(window).scrollTop() > 300){
+            $('.rim').css({transform:"rotate(-140deg)"});
+        }
+        if ($(window).scrollTop() > 330){
+            $('.rim').css({transform:"rotate(-160deg)"});
+        }
+        if ($(window).scrollTop() > 360){
+            $('.rim').css({transform:"rotate(-180deg)"});
+        }
+        if ($(window).scrollTop() > 390){
+            $('.rim').css({transform:"rotate(-200deg)"});
+        }
+        if ($(window).scrollTop() > 420){
+            $('.rim').css({transform:"rotate(-220deg)"});
+        }
+        if ($(window).scrollTop() > 450){
+            $('.rim').css({transform:"rotate(-240deg)"});
+        }
+        if ($(window).scrollTop() > 470){
+            $('.rim').css({transform:"rotate(-260deg)"});
+        }
+        if ($(window).scrollTop() > 520){
+            $('.rim').css({transform:"rotate(-280deg)"});
+        }
+        if ($(window).scrollTop() > 550){
+            $('.rim').css({transform:"rotate(-300deg)"});
         }
     }
 });
+
+
+var controller = new ScrollMagic.Controller();
+var tween = TweenMax.to(".main__head", 1,  {x: 0});
+var scene = new ScrollMagic.Scene({offset: 120,duration: 500})
+                            .setTween(tween)
+                            .setPin(".main__head")
+                            .addTo(controller);
+// if (window.screen.width < 1699) {
+    var tween1 = TweenMax.to(".main__back", 1, {x: "-50%"});
+    var scene1 = new ScrollMagic.Scene({offset: 120, duration: 500})
+                                .setTween(tween1)
+                                .setPin(".main__back")
+                                .addTo(controller);
+// }
+// else if (window.screen.width > 1700) {
+//     var tween2 = TweenMax.to(".main__back", 1, {x: "-46%"});
+//     var scene2 = new ScrollMagic.Scene({offset: 120, duration: 500})
+//                                 .setTween(tween2)
+//                                 .setPin(".main__back")
+//                                 .addTo(controller);
+// }
+// else if (window.screen.width > 2100) {
+//     var tween3 = TweenMax.to(".main__back", 1, {x: "0"});
+//     var scene3 = new ScrollMagic.Scene({offset: 120, duration: 500})
+//                                 .setTween(tween3)
+//                                 .setPin(".main__back")
+//                                 .addTo(controller);
+// }
